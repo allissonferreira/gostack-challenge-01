@@ -52,5 +52,7 @@ The POST/PUT body structure is as follows:
 - Delete a project:
 `DELETE: /projects/:id`
 
+**Tasks:**
+
 - Add a task to a project:
 `POST: /projects/:id/tasks`
