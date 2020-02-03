@@ -11,7 +11,7 @@ function checkIfProjectExists( req, res, next ) {
 		return res.sendStatus( 400 ).json( { 'message': 'Project not found!' } )
 	}
 
-	next( )
+	return next( )
 }
 
 const projects = [ ];
