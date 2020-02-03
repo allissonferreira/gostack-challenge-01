@@ -8,7 +8,7 @@ function checkIfProjectExists( req, res, next ) {
 	const project = projects.find( ( p ) => p.id === id )
 
 	if ( !project ) {
-		res.sendStatus( 400 ).json( { 'message': 'Project not found!' } )
+		return res.sendStatus( 400 ).json( { 'message': 'Project not found!' } )
 	}
 
 	next( )
