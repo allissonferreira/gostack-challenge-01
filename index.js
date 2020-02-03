@@ -28,8 +28,10 @@ server.post( '/projects', ( req, res ) => {
 	if ( projectIndex >= 0 ) {
 		return res.sendStatus( 400 )
 	}
+
+	const project = { id: id, title: title, tasks: [ ] }
 	
-	projects.push( { id: id, title: title, tasks: [ ] } );
+	projects.push( project );
 
 	return res.json( project )
 } )
